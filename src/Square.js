@@ -17,7 +17,7 @@ export default function Square(){
             rNum.current.focus();
             return;
         }
-        let urladd = "http://localhost:5000/find"
+        let urladd = "https://square-backend-gelntoftm-vishal-gori.vercel.app/find"
         let data = {params:{number:num}}
         axios.get(urladd, data)
         .then(res => setAns(res.data.msg))
