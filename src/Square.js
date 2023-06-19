@@ -11,7 +11,7 @@ export default function Square(){
 
     const find = (event) =>{
         event.preventDefault();
-        if(num == ""){
+        if(num === ""){
             alert("Empty Input");
             setAns("");
             rNum.current.focus();
